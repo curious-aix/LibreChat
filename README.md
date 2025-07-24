@@ -47,7 +47,7 @@
 </p>
 
 
-# ✨ Features
+# ✨ Features Pablo was here
 
 - 🖥️ **UI & Experience** inspired by ChatGPT with enhanced design and features
 
