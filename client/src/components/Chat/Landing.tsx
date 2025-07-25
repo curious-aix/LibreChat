@@ -138,10 +138,11 @@ export default function Landing({ centerFormOnLanding }: { centerFormOnLanding: 
     return margin;
   }, [lineCount, description, textHasMultipleLines, contentHeight]);
 
-  const greetingText =
-    typeof startupConfig?.interface?.customWelcome === 'string'
-      ? getGreeting()
-      : getGreeting() + (user?.name ? ', ' + user.name : '');
+const greetingText =
+  (typeof startupConfig?.interface?.customWelcome === 'string' && startupConfig.interface.customWelcome)
+    ? startupConfig.interface.customWelcome.replace(/{{user.name}}/g, user?.name || "")
+    : "Welcome to your private LibreChat, Pablo!";
+
 
   return (
     <div
