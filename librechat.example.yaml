@@ -166,6 +166,14 @@ actions:
 #       - /path/to/obsidian/vault
 
 # Definition of custom endpoints
+
+# --- MCP SERVER CONFIGURATION ---
+mcp_servers:
+  - name: "Production MCP"
+    url: "https://czlonkowskin8n-mcp-railwaylatest-production-e37b.up.railway.app"
+    apiKey: "8sNzGfkbJw1VvEwTazCQtUmSFykfY9Z1N4XgrBRhUig="
+# --------------------------------
+
 endpoints:
   # assistants:
   #   disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
