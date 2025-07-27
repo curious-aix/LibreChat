@@ -1,5 +1,5 @@
-# V.1  Pablo
-#For more information, see the Configuration Guide:
+# V.1  Pablo - Build #18
+# For more information, see the Configuration Guide:
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
 # Configuration version (required)
@@ -11,11 +11,9 @@ cache: true
 # File strategy s3/firebase
 # fileStrategy: "s3"
 
-
-
 # Custom interface configuration
 interface:
-  customWelcome: "Welcome back, {{user.name}}! 🎉 LibreChat v3"
+  customWelcome: "Welcome back, {{user.name}}! 🎉 LibreChat Build #18"
   # MCP Servers UI configuration
   mcpServers:
     placeholder: 'MCP Servers'
@@ -25,7 +23,6 @@ interface:
   privacyPolicy:
     externalUrl: 'https://librechat.ai/privacy-policy'
     openNewTab: true
-
 
   # Terms of service
   termsOfService:
@@ -95,7 +92,6 @@ registration:
   # allowedDomains:
   # - "gmail.com"
 
-
 # Example Balance settings
 # balance:
 #   enabled: false
@@ -112,7 +108,6 @@ registration:
 #       apiKey: '${TTS_API_KEY}'
 #       model: ''
 #       voices: ['']
-
 #
 #   stt:
 #     openai:
@@ -295,6 +290,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: 'Portkey'
       iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf
+
 # fileConfig:
 #   endpoints:
 #     assistants:
@@ -322,8 +318,9 @@ endpoints:
 #     maxWidth: 1900  # Maximum width for resized images (default: 1900)
 #     maxHeight: 1900  # Maximum height for resized images (default: 1900)
 #     quality: 0.92  # JPEG quality for compression (0.0-1.0, default: 0.92)
-# # See the Custom Configuration Guide for more information on Assistants Config:
-# # https://www.librechat.ai/docs/configuration/librechat_yaml/object_structure/assistants_endpoint
+
+# See the Custom Configuration Guide for more information on Assistants Config:
+# https://www.librechat.ai/docs/configuration/librechat_yaml/object_structure/assistants_endpoint
 
 # Memory configuration for user memories
 # memory:
