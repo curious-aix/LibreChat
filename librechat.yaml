@@ -1,63 +1,10 @@
 version: 1.2.1
 
-# Optional cache setting for performance
-cache: true
-
-# Basic interface customization
 interface:
-  customWelcome: "Welcome back! 🚀"
   mcpServers:
     placeholder: 'MCP Servers'
-  fileSearch: true
-  privacyPolicy:
-    externalUrl: 'https://librechat.ai/privacy-policy'
-    openNewTab: true
-  termsOfService:
-    externalUrl: 'https://librechat.ai/tos'
-    openNewTab: true
-    modalAcceptance: true
-    modalTitle: "Terms of Service"
-    modalContent: |
-      # Terms and Conditions
-      Please review our latest Terms and Conditions at https://librechat.ai/tos
 
-# Registration options (social logins)
-registration:
-  socialLogins: ['github', 'google', 'discord']
-
-# Example Actions configuration (optional, but safe)
-actions:
-  allowedDomains:
-    - "librechat.ai"
-    - "google.com"
-
-# MCP Servers
 mcp_servers:
   - name: "Production MCP"
     url: "https://czlonkowskin8n-mcp-railwaylatest-production-e37b.up.railway.app"
     apiKey: "8sNzGfkbJw1VvEwTazCQtUmSFykfY9Z1N4XgrBRhUig="
-
-# Example Custom Endpoint (for other AI providers, you can add more as needed)
-endpoints:
-  custom:
-    - name: "groq"
-      apiKey: '${GROQ_API_KEY}'
-      baseURL: 'https://api.groq.com/openai/v1/'
-      models:
-        default: ['llama3-70b-8192', 'llama3-8b-8192']
-        fetch: false
-      modelDisplayLabel: 'groq'
-
-# Uncomment and customize as needed for features below
-# memory:
-#   disabled: false
-#   personalize: true
-
-# fileConfig:
-#   endpoints:
-#     default:
-#       totalSizeLimit: 20
-#   serverFileSizeLimit: 100
-
-# Optional advanced config can go below
-
